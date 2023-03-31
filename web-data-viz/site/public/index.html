@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>ErrorEagle | Página Inicial</title>
+
+  <script src="./js/funcoes.js"></script>
+
+  <link rel="icon" href="./assets/icon/" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"> -->
+</head>
+
+<body>
+  <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">Login</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mx-3">
+          <div class="md-form mb-5">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="defaultForm-email">Email</label>
+            <input type="email" id="defaultForm-email" class="form-control validate">
+
+          </div>
+
+          <div class="md-form mb-4">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="defaultForm-pass">Senha</label>
+            <input type="password" id="defaultForm-pass" class="form-control validate">
+
+          </div>
+
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button class="btn btn-default">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">Cadastrar</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mx-3">
+          <div class="md-form mb-5">
+            <i class="fas fa-user prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="orangeForm-name">Nome</label>
+            <input type="text" id="orangeForm-name" class="form-control validate">
+
+          </div>
+          <div class="md-form mb-5">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="orangeForm-email">Email</label>
+            <input type="email" id="orangeForm-email" class="form-control validate">
+          </div>
+
+          <div class="md-form mb-4">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="orangeForm-pass">Senha</label>
+            <input type="password" id="orangeForm-pass" class="form-control validate">
+
+          </div>
+          <div class="md-form mb-4">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="orangeForm-pass">Confirme a senha</label>
+            <input type="password" id="orangeForm-pass" class="form-control validate">
+
+          </div>
+
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button class="btn btn-deep-orange">Cadastrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <nav class=" navbar navbar-expand-lg navbar-dark header ">
+    <div class="container-xl d-flex  ">
+      <a class="navbar-brand" href="#">
+        <img src="assets/icon/logo.svg" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse  navbar-collapse  " id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link navLinkHeader text-center" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navLinkHeader text-center" data-toggle="modal" data-target="#modalRegisterForm"
+              href="#">Cadastrar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navLinkHeader text-center" href="#" data-toggle="modal"
+              data-target="#modalLoginForm">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+
+    <section id="sec_01">
+      <div class="container">
+        <img src="assets/icon/ErrorEagle.svg" class="img-fluid" id="heroImgText" alt="">
+        <p class="w-75">Somos uma empresa especializada em monitorar problemas recorrentes nos caixas de
+          autoatendimento
+          (Totens) em
+          supermercados. Nós sabemos que esses caixas são uma opção popular para a maioria dos clientes, mas também
+          sabemos que
+          eles podem apresentar bugs e falhas que atrapalham e frustram a experiência do cliente.</p>
+      </div>
+    </section>
+    <section id="sec_02">
+
+      <div class="container d-flex  informacoesCollum justify-content-around align-itens-center w=100">
+        <div class="  card text-white mb-3 cardValores border-0 w-50   h-25  ">
+          <div class="card-header cardHeaderValores text-center  ">
+            <h3 class="font-weight-bold align-middle">Missão</h3>
+          </div>
+          <div class="card-body">
+
+            <p class="card-text py-2 px-2 fontSizeCard ">Nossa missão é oferecer uma solução de monitoramento avançada
+              e
+              confiável
+              para
+              totens
+              de
+              supermercado, que
+              ajude a melhorar a experiência do cliente e a eficiência do gerenciamento de estabelecimentos.</p>
+          </div>
+        </div>
+
+        <button type="button"
+          class="btn card border-0 cardValoresMiddles d-flex  justify-content-center align-items-center text-light  text-center w-50 animate__animated animate__pulse animate__infinite	infinite animate__slow	2s"
+          data-toggle="modal" data-target="#exampleModalCenter">
+          <h3 class="font-weight-bold">Valores</h3>
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+          aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Valores</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h3>
+                  Inovação
+                </h3>
+                <p>Estamos comprometidos com a constante melhoria e inovação em nossos serviços e soluções.</p>
+                <h3>Confiança</h3>
+                <p>Valorizamos a confiança que nossos clientes depositam em nossa equipe e em nossos produtos.</p>
+                <h3>Excelência</h3>
+                <p>Buscamos oferecer soluções de monitoramento de totens de supermercado de excelência, tanto em
+                  termos
+                  de tecnologia quanto de suporte ao cliente.</p>
+                <h3>Responsabilidade</h3>
+                <p>Temos responsabilidade em fornecer soluções eficazes e confiáveis, que atendam às necessidades de
+                  nossos clientes.</p>
+                <h3>Colaboração</h3>
+                <p>Trabalhamos em estreita colaboração com nossos clientes para entender suas necessidades e fornecer
+                  soluções personalizadas</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">fechar</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="  card text-white mb-3 cardValores border-0 w-50   ">
+          <div class=" card-header cardHeaderValores text-center ">
+            <h3 class=" font-weight-bold align-middle">Visão</h3>
+          </div>
+          <div class="card-body">
+
+            <p class="  card-text py-2 px-2 fontSizeCard">Queremos ser reconhecidos como líderes no mercado de
+              soluções
+              de
+              monitoramento
+              de
+              totens de supermercado,
+              oferecendo tecnologia avançada e suporte excepcional ao cliente.</p>
+          </div>
+        </div>
+
+    </section>
+
+    <section id="sec_03">
+      <div
+        class="container-fluid .informacoesCollum d-flex align-items-center justify-content-center py-5 informacoes  ">
+        <div class=" mx-5">
+          <div>
+            <h1 class=" text-center font-weight-bold text-danger numberHeader">3</h1>
+            <p class="text-center text-white textHeader">Anos de experiência </p>
+          </div>
+        </div>
+        <div id="" class="card-group informacoesCollum d-flex .flex-md-wrap w-50 mx-5">
+          <div class="card-columns informacoesCollum w-100 h-100 d-flex justify-content-center align-items-center">
+            <div
+              class="card align-middle w-100 h-100 mx-2 my-4 py-4  justify-content-center text-center cardInformations">
+              <div class="card-body ">
+                <h2 class="card-title">Preços</h2>
+                <p class="card-text lead">Condizentes</p>
+              </div>
+            </div>
+            <div
+              class="card align-middle w-100 h-100 mx-2 my-2 py-4  justify-content-center text-center cardInformations">
+              <div class="card-body ">
+                <h2 class="card-title">Alertas</h2>
+                <p class="card-text lead">Imediatos</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card-columns informacoesCollum .flex-md-wrap w-100 d-flex justify-content-center h-100 align-items-center">
+            <div
+              class="card align-middle w-100 h-100 mx-2 my-4 py-4  justify-content-center text-center cardInformations">
+              <div class="card-body ">
+                <h2 class="card-title">Clientes</h2>
+                <p class="card-text lead ">Satisfeitos</p>
+              </div>
+            </div>
+            <div
+              class="card align-middle w-100 h-100 mx-2 my-4 py-4 justify-content-center text-center cardInformations">
+              <div class="card-body ">
+                <h2 class="card-title">Identificamos</h2>
+                <p class="card-text lead ">A Causa Raiz</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sec_04">
+      <div id="middleIMG" class="d-flex justify-content-center align-items-center">
+        <h4 id="teamText" class="text-light text-center">Nosso Time</h4>
+      </div>
+    </section>
+
+    <section id="sec_06">
+      <div class="container py-5">
+
+
+        <form class="text-light formEnviarMsg px-5 py-5 mx-3">
+          <h1 class="text-light text-center font-weight-bold py-5">Entre em contato</h1>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inpNome">Nome</label>
+              <input type="text" class="form-control" id="inpNome">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inpSobrenome">Sobrenome</label>
+              <input type="text" class="form-control" id="inpSobrenome">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inpTelefone">Telefone</label>
+              <input type="tel" class="form-control" id="inpTelefone">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inpEmail">Email</label>
+              <input type="email" class="form-control" id="inpEmail">
+            </div>
+          </div>
+
+
+          <div class="form-group">
+            <label for="inputCity">Mensagem</label>
+            <textarea type="text" class="form-control" id="inputCity"></textarea>
+          </div>
+
+          <button class="btn btnEnviar align-middle  w-100 py-3">Enviar</button>
+        </form>
+
+
+      </div>
+    </section>
+    <section id="sec_07" class="py-5">
+      <div class="container">
+
+        <div class="jumbotron jumbotron-fluid my-5 jumbotronBgcolor">
+          <div class="container d-flex align-items-center justify-content-center jumbotronCollunm">
+            <div class=" mx-5 text-light">
+              <h1 class="display-4">Contrate agora!</h1>
+              <p class="lead">Faça sua conta agora e entraremos em contato!</p>
+            </div>
+            <div class=""> <button data-toggle="modal" data-target="#modalRegisterForm"
+                class="btnEnviar w-100 h-75 py-4 px-5 ">Cadastre-se</button> </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+    <section id="sec_08">
+      <div class="container">
+
+      </div>
+    </section>
+  </main>
+  <footer class="d-flex text-light bg-dark flex-wrap justify-content-between align-items-center py-3 footerBG">
+    <p class="col-md-4 mb-0 text-muted ">© 2023 ErrorEagle, Inc</p>
+
+    <a class="py-2" href="/"
+      class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+      <img src="assets/icon/logo.svg" alt="">
+    </a>
+
+    <ul class="nav col-md-4 justify-content-end">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+    </ul>
+  </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+  integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+<script src="js/funcoesIndex.js"></script>
+
+</html>

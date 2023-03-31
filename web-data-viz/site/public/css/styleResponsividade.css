@@ -1,0 +1,257 @@
+/* 
+@media only screen and (max-width: 768px) {
+    .cadastro {
+        z-index: 10000;
+    }
+
+    .login {
+        z-index: 10000;
+    }
+
+    header {
+        position: none;
+        flex-direction: column;
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo {
+        width: 190px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    #navbarList {
+
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+
+    #navbarList button,
+    #navbarList a {
+        margin: 10px 0px;
+        padding: 30px;
+    }
+
+    #sec_01 {
+
+        height: 80vh;
+        display: grid;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+
+    }
+
+    #sec_01 .container {
+        width: 100%;
+        padding: 0px 0px 60px 0px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #heroImgText {
+        width: 400px;
+        margin: 0px 0px 40px 0px;
+    }
+
+    #sec_01 .container p {
+
+        width: 70%;
+        font-size: .8rem;
+    }
+
+    #sec_02 {
+        display: flex;
+
+    }
+
+    #sec_02 .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sec_02 .panelInfo {
+        width: 200px;
+        height: 200px;
+
+        flex-wrap: nowrap;
+    }
+
+    #sec_02 .panelInfo h2 {
+        font-size: 1rem;
+    }
+
+    #sec_02 .firsAndLast {
+        width: 225px;
+        height: 250px;
+        background-color: #1E1E1E;
+        border-radius: 6px;
+        margin: 0px 30px;
+
+    }
+
+    #sec_02 .panelInfo .content {
+
+        background-color: none;
+        color: white;
+    }
+
+    .firsAndLast .content h2 {
+        text-align: center;
+        background-color: #EF403F;
+        ;
+    }
+
+
+    .firsAndLast {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: none;
+        color: white;
+        height: 300px;
+    }
+
+
+
+    .firsAndLast .content p {
+        font-size: 1rem;
+        word-break: break-all;
+    }
+
+    #sec_02 .panelInfo .content h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: none;
+    }
+
+    #sec_03 {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    #sec_03 .container {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    #sec_03 .container #panelGroup .panelInfo {
+        margin: 10px;
+        width: 200px;
+        height: 100px;
+
+    }
+
+    #sec_03 .panelInfo h1{
+        font-size: 1rem;
+        margin: 12px 0px;
+        padding: 20px 0px;
+    }
+
+    #sec_03 .panelInfo p{
+        font-size: 1rem;
+        margin: 0px 0px;
+        padding: 0px 0px;
+    }
+
+    #sec_04 {
+        display: flex;
+        height: 500px;
+        width: 100vw;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-image: url(../assets/imgs/imgTeam.png);
+        background-position: center;
+    }
+
+    #sec_04 #middleIMG {
+        display: none;
+    }
+
+    #sec_05 {
+        display: flex;
+        justify-content: center;
+    }
+
+    #sec_05 .container {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    #sec_05 .panelInfo {
+        height: 200px;
+        margin: 50px 0px;
+        padding: 50px 0px;
+    }
+
+    #sec_05 .paineis {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sec_06 .container {
+        width: 100%;
+
+    }
+
+    #sec_06 form input {
+        width: 85%;
+        background-color: #4d4d4d;
+        color: white;
+        border: none;
+    }
+
+    #sec_07 .container div {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #sec_07 .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #sec_07 .container div {
+        width: 50%;
+    }
+
+
+    #ctcDiv {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0px;
+    }
+
+    #sec_07 .container button {
+        padding: 20px 30px;
+        font-size: 20px;
+    }
+
+    #sec_07 #textInformation h1 {
+        font-size: 40px;
+        text-align: center;
+        margin: 20px 0px;
+    }
+
+    #sec_07 #textInformation h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #sec_08 {
+        height: 90%;
+    }
+}
+ */
